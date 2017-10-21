@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gem Collector</title>
+  <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+  <div id="scoreboard" class="horizontal-flex-centered">
+      <div class="metric-container vertical-flex-centered">
+          <span id="wins" class="metric">0</span>
+          <p class="metric-name">Wins</p>
+      </div>
+      <div class="metric-container vertical-flex-centered">
+          <span id="losses" class="metric">0</span>
+          <p class="metric-name">Losses</p>
+      </div>
+  </div>
+  <div id="wrapper">
+    <h1>Gem Collector</h1>
+    <p class="non-game">Press space to start</p>
+    <div id="game" class="vertical-flex-centered">
+      <h1>Number: <span id="number">0</span></h1>
+      <div id="gems" class="horizontal-flex-centered">
+        <div id="gem1"></div>
+        <div id="gem2"></div>
+        <div id="gem3"></div>
+        <div id="gem4"></div>
+      </div>
+      <h3>Total: <span id="total">0</span></h3>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/**
+ * Global styles
+ */
+* {
+    font-family: 'Quicksand', arial, sans-serif;
+    text-align: center;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+#wrapper {
+  min-height: 100vh;
+}
+
+
+#game {
+  flex-grow: 1;
+  min-height: 70vh;
+}
+
+
+/**
+ * Helper Styles
+ */
+.vertical-flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.horizontal-flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+
+#gems > * {
+  height: 125px;
+  width: 124px;
+  object-fit: contain;
+}
+
+#gems > *:hover {
+  cursor: pointer;
+}
+
+#gem1 {
+  background: url('../images/1.png');
+}
+
+#gem2 {
+  background: url('../images/2.png');
+}
+
+#gem3 {
+  background: url('../images/3.png');
+}
+
+#gem4 {
+  background: url('../images/4.png');
+}
+
+
+
+/**
+ * game styles
+ */
+#scoreboard {
+    position: fixed;
+    top: 15px;
+    right: 0;
+    width: auto;
+    background: #444;
+    border-radius: 15px 0 0 15px;
+    padding: 10px 25px;
+}
+
+.metric {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.metric-name {
+    margin: 5px 0;
+    font-size: .95em;
+}
+
+.metric-container {
+    width: 50px;
+    margin: 3px;
+    color: #fff;
+}
